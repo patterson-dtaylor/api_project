@@ -1,7 +1,7 @@
 FROM python:3
 
 WORKDIR /home/flask-api
-COPY . .
+COPY ./api .
 
 RUN pip install -r requirements.txt
 
