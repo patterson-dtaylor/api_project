@@ -62,5 +62,6 @@ curl --request DELETE http://localhost:8000/user/1
 
 ## Future Iterations
 
-- Develop CI/CD Pipelines with Github Actions
+- Develop CD Pipeline with Github Actions
+    - This could be accomplished with deploying to an K8s Cluster or on an EC2 running Docker.
 - Build out the Database with more complex tables
