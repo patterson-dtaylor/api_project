@@ -1,0 +1,14 @@
+version: "3"
+services:
+  sqlite:
+    image: keinos/sqlite3:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./data/:/root/db/
+  api:
+    build: .
+    ports:
+     - "8000:8000"
+    volumes:
+      - ./data/:/home/flask-api/data
